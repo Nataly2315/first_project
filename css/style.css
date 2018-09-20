@@ -405,3 +405,87 @@ position: absolute;
     text-align: center;
 
 }
+
+/*footer*/
+
+.postcard {
+    max-width: 350px;
+    margin: 50px auto 0;
+    padding: 20px;
+    background: #fffdee;
+    border: 10px solid transparent;
+    border-radius: 50%;
+    border-image: 10 repeating-linear-gradient(135deg, black, darkgray 10px, transparent 10px, transparent 20px, #f39c12 20px, #FBCFDF 30px,transparent 30px, transparent 40px);
+    font-family: "Open Sans", Arial, self-serif;
+    color: #605756;
+}
+
+.form-row {
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+label {
+    cursor: default;
+    font-weight: bold;
+}
+
+
+.form-row input[type="text"], .form-row input[type="email"], .form-row textarea {
+    width: 95%;
+    padding: 0 10px;
+    line-height: 35px;
+    border-width: 0;
+    outline: none;
+    background: transparent url(https://html5book.ru/wp-content/uploads/2016/12/bg-form.png) bottom left repeat-x;
+    background-size: 8px 35px;
+
+}
+
+.form-row input[type="submit"] {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background: lightgrey;
+    border-width: 0;
+    cursor: pointer;
+    outline: none;
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: black;
+    text-transform: uppercase;
+    transition: 1s cubic-bezier(.165, .84, .44, 1);
+}
+
+.form-row input[type="submit"]:hover {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background: #f39c12;
+    border-width: 0;
+    cursor: pointer;
+    outline: none;
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: #fffdee;
+    text-transform: uppercase;
+    transition: 1s cubic-bezier(.165, .84, .44, 1);
+}
+
+.form-row textarea {
+    background-attachment: local;
+    background-repeat: repeat;
+    resize: none;
+}
+
+input, textarea, select, button {
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+}
