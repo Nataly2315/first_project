@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/icomoon.css">
-
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
 
 </head>
 <body>
@@ -18,33 +19,48 @@
     <div class="container ">
         <div class="header-container ">
             <div class="logo"><a href="#"> { }</a></div>
-            <div class="nav">
-                <ul class="menu">
-                    <li class="menu__item">
-                        <a class="menu__link">Home</a></li>
-                    <li class="menu__item">
-                        <a href="#about" class="menu__link">About</a></li>
-                    <li class="menu__item">
-                        <a href="#skills" class="menu__link">Skills</a></li>
-                    <li class="menu__item">
-                        <a href="#works" class="menu__link">Works</a></li>
-                    <li class="menu__item">
-                        <a href="#contact" class="menu__link">Contact</a>
-                    </li>
-                </ul>
-
+            <div class="menu-toggle">
+                <svg class="ham ham3 " viewBox="0 0 100 100" width="80" fill="white"
+                     onclick="this.classList.toggle('active')">
+                    <path
+                            class="line top"
+                            d="m 70,33 h -40 c -11.092231,0 11.883874,13.496726 -3.420361,12.956839 -0.962502,-2.089471 -2.222071,-3.282996 -4.545687,-3.282996 -2.323616,0 -5.113897,2.622752 -5.113897,7.071068 0,4.448316 2.080609,7.007933 5.555839,7.007933 2.401943,0 2.96769,-1.283974 4.166879,-3.282995 2.209342,0.273823 4.031294,1.642466 5.857227,-0.252538 v -13.005715 16.288404 h 7.653568"/>
+                    <path
+                            class="line middle"
+                            d="m 70,50 h -40 c -5.6862,0 -8.534259,5.373483 -8.534259,11.551069 0,7.187738 3.499166,10.922274 13.131984,10.922274 11.021777,0 7.022787,-15.773343 15.531095,-15.773343 3.268142,0 5.177031,-2.159429 5.177031,-6.7 0,-4.540571 -1.766442,-7.33533 -5.087851,-7.326157 -3.321409,0.0092 -5.771288,2.789632 -5.771288,7.326157 0,4.536525 2.478983,6.805271 5.771288,6.7"/>
+                    <path
+                            class="line bottom"
+                            d="m 70,67 h -40 c 0,0 -3.680675,0.737051 -3.660714,-3.517857 0.02541,-5.415597 3.391687,-10.357143 10.982142,-10.357143 4.048418,0 17.88928,0.178572 23.482143,0.178572 0,2.563604 2.451177,3.403635 4.642857,3.392857 2.19168,-0.01078 4.373905,-1.369814 4.375,-3.392857 0.0011,-2.023043 -1.924401,-2.589191 -4.553571,-4.107143 -2.62917,-1.517952 -4.196429,-1.799562 -4.196429,-3.660714 0,-1.861153 2.442181,-3.118811 4.196429,-3.035715 1.754248,0.0831 4.375,0.890841 4.375,3.125 2.628634,0 6.160714,0.267857 6.160714,0.267857 l -0.178571,-2.946428 10.178571,0 -10.178571,0 v 6.696428 l 8.928571,0 -8.928571,0 v 7.142858 l 10.178571,0 -10.178571,0"/>
+                </svg>
             </div>
+            <ul class="menu">
+                <li class="menu__item">
+                    <a class="menu__link" href="#banner">Home</a></li>
+                <li class="menu__item">
+                    <a href="#about" class="menu__link">About</a></li>
+                <li class="menu__item">
+                    <a href="#skills" class="menu__link">Skills</a></li>
+                <li class="menu__item">
+                    <a href="#works" class="menu__link">Works</a></li>
+                <li class="menu__item">
+                    <a href="#contact" class="menu__link">Contact</a>
+                </li>
+            </ul>
+
         </div>
+    </div>
     </div>
 </header>
 <section id="banner">
     <div class="container">
-        <h1>
-            Nataliia Kozak
+
+        <h1> Nataliia Kozak
             <span class="bold">Aspiring Junior Front-end web developer </span>
             <span class="small">Make Great Ideas Happen</span>
         </h1>
         <a href="#about" class="btn">Learn More</a>
+
+
     </div>
 </section>
 <section id="about">
@@ -129,7 +145,118 @@
             <h2>Works</h2>
         </div>
 
-        <div class="slider">
+        <div class="portfolio-slider">
+
+            <div class="portfolio_list_item">
+                <a href="#" class="portfolio_list_link"></a>
+                <div class="portfolio_list_img">
+                    <span class="portfolio_icon"><img src="img/photoimg.png"></span>
+                    <a href="#" class="portfolio_list_preview"></a>
+                </div>
+                <div class="portfolio_list_text">
+                    <p class="portfolio_list_title">project Title Here </p>
+                    <p class="portfolio_list_describe">Photography</p>
+                </div>
+
+            </div>
+
+
+            <div class="portfolio_list_item">
+                <a href="#" class="portfolio_list_link"></a>
+                <div class="portfolio_list_img">
+                    <span class="portfolio_icon"> <img src="img/photoimg.png"> </span>
+                    <a href="#" class="portfolio_list_preview"></a>
+                </div>
+                <div class="portfolio_list_text">
+                    <p class="portfolio_list_title">project Title Here</p>
+                    <p class="portfolio_list_describe">Photography</p>
+                </div>
+
+            </div>
+
+
+            <div class="portfolio_list_item">
+                <a href="#" class="portfolio_list_link"> </a>
+                <div class="portfolio_list_img">
+                    <span class="portfolio_icon">  <img src="img/photoimg.png"></span>
+                    <a href="#" class="portfolio_list_preview"></a>
+                </div>
+                <div class="portfolio_list_text">
+                    <p class="portfolio_list_title">project Title Here</p>
+                    <p class="portfolio_list_describe">Photography</p>
+                </div>
+
+            </div>
+
+
+            <div class="portfolio_list_item">
+                <a href="#" class="portfolio_list_link"> </a>
+                <div class="portfolio_list_img">
+                    <img src="img/images.jpg">
+                    <a href="#" class="portfolio_list_preview"></a>
+                </div>
+                <div class="portfolio_list_text">
+                    <p class="portfolio_list_title">project Title Here</p>
+                    <p class="portfolio_list_describe">Photography</p>
+
+
+                </div>
+
+            </div>
+
+
+            <div class="portfolio_list_item">
+                <a href="#" class="portfolio_list_link"></a>
+                <div class="portfolio_list_img">
+                    <span class="portfolio_icon"><img src="img/photoimg.png"></span>
+                    <a href="#" class="portfolio_list_preview"></a>
+                </div>
+                <div class="portfolio_list_text">
+                    <p class="portfolio_list_title">project Title Here</p>
+                    <p class="portfolio_list_describe">Photography</p>
+                </div>
+
+            </div>
+
+
+            <div class="portfolio_list_item">
+                <a href="#" class="portfolio_list_link"> </a>
+                <div class="portfolio_list_img">
+                    <span class="portfolio_icon"><img src="img/photoimg.png"></span>
+                    <a href="#" class="portfolio_list_preview"></a>
+                </div>
+                <div class="portfolio_list_text">
+                    <p class="portfolio_list_title">project Title Here</p>
+                    <p class="portfolio_list_describe">Photography</p>
+                </div>
+
+            </div>
+
+            <div class="portfolio_list_item">
+                <a href="#" class="portfolio_list_link"> </a>
+                <div class="portfolio_list_img">
+                    <span class="portfolio_icon"><img src="img/photoimg.png"></span>
+                    <a href="#" class="portfolio_list_preview"></a>
+                </div>
+                <div class="portfolio_list_text">
+                    <p class="portfolio_list_title">project Title Here</p>
+                    <p class="portfolio_list_describe">Photography</p>
+                </div>
+
+            </div>
+
+            <div class="portfolio_list_item">
+                <a href="#" class="portfolio_list_link"> </a>
+                <div class="portfolio_list_img">
+                    <span class="portfolio_icon"><img src="img/photoimg.png"></span>
+                    <a href="#" class="portfolio_list_preview"></a>
+                </div>
+                <div class="portfolio_list_text">
+                    <p class="portfolio_list_title">project Title Here</p>
+                    <p class="portfolio_list_describe">Photography</p>
+                </div>
+
+            </div>
 
         </div>
 
@@ -250,7 +377,7 @@
     </div>
 </section>
 
-<section class="contact">
+<section id="contact">
     <div class="container">
         <div class="title">
             <h2>Contact</h2>
@@ -281,16 +408,20 @@
             <div class="contact-wrap__right">
                 <h6>Contact Info</h6>
                 <ul class="contact-list">
-                                    <li class="contact-list__item">
-                        <span class="contact-list__icon"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKCSURBVGhD5dlLqE1RHMfx4y2FFEkmHikJKQMlZeSVRx4TA48BJh4DI4pEJqKMZKAM5FlCRErMJAYkJcVIyQRRXpHX9zc4ddr91jl739Y5+3/zq8/kdu7Zv733unevtXajQqbgME5gsX7QH7MJX/G3xWkMQr/IABzEH7SeRJPuTvgMxwW4E2i1DmGjIXMdrnjRR0xEyGjIuNIp1xAuK+HKdqLfC5OheA1XtJPnGIwQ2QZXsqytCJFHcAXLeozaMxmuXFXjUGs2wBWrahZqzXG4YlXV/ky5BFesigeoPXfgypX1CTNRe+7BFSzjPeYjRC7DlezkJaYhTE7CFW3nLEYiVHbAlU25Aq1XwmUuXOGUOQgZTfg+w5V2Qt6NZs7DlXbGI2yWw5V21iNshuAtXPEiPXdCZw9ccUd3MGxGQRsKrniRHobDEDYH4Io7+mzYjEDZtfsvLEHYrIUr7nyAVphhcxuuuPMEupMhMwGaorvizi1oSylk1sCVTtFksi+79GOxG2egnU4dN/tFOQVXOuUcqpzMCrxD8XteYRGyRTvzD1E8UDtXUWatsgv6z+e+Q37jCLLtYmp35A3cwVJeYDpSqfK80pRoDLJkHr7DHSjlC/ZhNJrR2D8G9/l2dGEmIUtWo91QSNEJ3cUNuL+HsvSgnoos2YLU67he0BDPdmeqzJK74T6yZS/cQXplIbJlO+oaZjuRNRvxA+5g3bQA2aMt07LL5By0Odi16KFZdQbQFxfR9cmpphL70a2hdhQ93VPTm6ucd+cnNC+rJbpyq/AMrlxZesk6G7VnIJZB0/tvcGWdp9iMMO/vW6PtpqU4hJvQ8NO2kujVnbZttcCagf8tjcY/2tImBsXPeGQAAAAASUVORK5CYII="></span>
-                        <a href="tel:+380931844065">+38(093) 184 40 65</a>, <a href="tel:+380505024736">+38 (050) 502 47 36</a>
+                    <li class="contact-list__item">
+                        <span class="contact-list__icon"><img
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALJSURBVGhD7ZnNi01xGMfvmDKZJOWlbA2yITRLpabkD5g0abCRmixJKWqymrJAaqKmZkHKSilFiZIksWAxO6JYCHmbyAwun+ec712Ye849L8655ynnU9/OvfN7nuf3+dXcufeeadTU1PynNJvNJeQcefs7BdTNkRG1+wGpC3JMDT0v1e4HpJ7KLzX0fFO7H5C6Lb9M0LdGI3yA0LTcMkHfsEb4AKETcssEfec1wgcI7ZFbJuh7phE+QGib3PKwUWOqB5l+DvMj9MoGfUc0xgcIPZBbJuh7qBE+QGhCbpmhd7XGVA8yQ/LKBH3fuSzXmOpBphepN4FdBujx9RoxkJqUXyqon1KrLxDbIcdEqL3GpVetvkCsB8GZwLQD1NwkfWrzCYIH5RsJ63e49KvcL4jal6x3oXY7rB1WqX+QPSrvNlj7SHx9fI8D0T7yXO5tsHaDi88X+kKQHQ61o2H9jEr9g+xdeUfC+qhKfYPoAJmVdxusfeWyReW+QfZAqB0N66/JOpX7BtGr8o6E9Rdkg8r9guQK8krekbD+nst2tSRC/VZynZwim/Tj8rHNEP0UWMdAjd2BHFNLLNTsIn+99ng+QybJPmJfvZeqvHjYYIjMhVvHQ80UifwsxvJu1ubDys5QZ68/u+d2jPRoRDEweJQ0g506QMkjslltATwfIT9Vkgn69mpMcTB0jPzSHrFQM09O83Al19yHMOi9pO2LhcH2u5zqzgt1s/9yCIP+y9q6eBi+k3zQXqVS6kEMNlhPnmi/0ij9IAb7LGajkyTXTb40dOUgLdhskCR+Vc5DVw9isKF9lzlOvsihELp+kBbsbX9y7f+SiW+gaajsIC1wWIvEWfI5VMoH/Rc1sloQWUYOkXsk8c10IfSMa5QfkFpF9pMrxD41J0LdoNp9gqPdFBzgah8mJ3S4Wzx/bOHxfTLO40VqqampSUWj8Qd2CEc9aCbE9AAAAABJRU5ErkJggg=="></span>
+                        <a href="tel:+380931844065">+38(093) 184 40 65</a>, <a href="tel:+380505024736">+38 (050) 502 47
+                        36</a>
                     </li>
                     <li class="contact-list__item">
-                    <span class="contact-list__icon"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGESURBVGhD7ZhJTsQwEEWzYVoi9gx3QYwXYrwQYjwNCI7BsIX/ECUFq5q0004wTT3pSZ3ucg2KZUvdBEEQBEEw5yzI1cqlx04W5bF8le+VSU/0Ro9Tsy6vpJfwN6QXeurNrnyUXvIxpDY9ZLMm01fH86l8k16xIaQWNb1e6LGTQ3kvtz+fvsOrvZZe4ZJSw9tG9ERv9NgJQZbwQnoJ9+WTbBcvITnJnUIP9GJx2YPgszyS6StekmeyxHYjB7nI2Yaa1KaHdnyvQcwHuSNTNuSt9NZMI2vJkUItanprZhrEvJTedjuQOduNWNakkJsa3hqzyCD4Ik9kut2W5bn8abvxGzHEtiEXOcntrWtbbBCTM35PpmzJO5nG8x2/pZAj564qPog56bgkF1sIveKs6XOcDzYI2gWWnjwrX7YhZpYLdtBBzEl3gVHiDhplEPNGbkqDz3znxeY66iBoJ1TXSZbr6IMMZQxSmzFIbcYgtRmD1GYMUpv/a5C5+RM7CIIgCIK/SdN8ADSP3pTPE6h2AAAAAElFTkSuQmCC"></span>
-                    <a href="mailto:nataliakozak2017@gmail.com">nataliakozak2017@gmail.com</a>
-                </li>
+                        <span class="contact-list__icon"><img
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKnSURBVGhD7ZjPalNBFMZT7KKuWnFR68oqdW2lDyDVNxB9A4sVBJdWqQ8gUhDpwqWKL6ClCm6tdFnqv40LK7hQK/h3YaWJvzP3u6G3kyY3ycSOOD/4mDvnfHPuOWmaG1JJJBKJf59arXa4Wq1eR4voSSR6hKynEbXZHIz70XuGiRJ6e8MyqHabg/kgepwdjQd6WkDDarMcnOvj0AX0Myuze9DDd5YptdYaDlzkwIC2DmJH0bKruAtw7yV0RO042O9Fl7T1IbmGXqLjCjmo10/sGvqdle893GsDXeFyj9pwEJtAr9GaQj6W3FLkKpf9SjmIWZFX5ukl3MNezHHd1kHYXsxZtCFP60Fy2D9Djf6sN1FVtmBQchPNcbn97T2GCm9v9uUHMYj9YJlCfbI52J8i9848IbBaaFLlHYTtA+c88j5wiLU3SA65BZYDsjrY7yN+3xm6gBr3WArPBmIjaDFz+JDrbBCD/Cd0WvY6xM6iz7KVhjPrLGdUpo7FlNsR8p0PkoPvDsv2V7Cthyhe+/pT+LpBeJDY3czRHHzdD2LgfctyQkcd7Fs+RC2Hprks/M8Rm0Tt3D/MIAZ++5S5wWWph6jF0JhsDsIDxObQZuYqB/5wg+Rw7jnLMZVxsK8/RJE9l2YtprSD2Dh6YTXahXPhBzE4+4vlMmr0JJ7Q1mEeYjM60xGc7c0gOdR4igoP0a1Yzjyyd4z1qpI+lpSvK6jzDZ1T2ToWs5xsXWG9qqyPJeULAvUeoGHpocJBsF7Vto8l5QsGNT+YtA3GXx+kV6RBYiMNEhtpkNhIg8TGfzPIqnzRQ68ratuH5Lx80UOvt9S2D8lR9FXemPmCDqntxjDISfQx88eH9YYKP+TtCP4hzNNoHt2ORNaL/foypDYTiUQikUgUqVT+ANcj3ZNJb6gfAAAAAElFTkSuQmCC"></span>
+                        <a href="mailto:nataliakozak2017@gmail.com">nataliakozak2017@gmail.com</a>
+                    </li>
                     <li class="contact-list__item">
-                        <span class="contact-list__icon"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANRSURBVGhD7dlZqE1RHMfxa0ghhExRxkRIUkiGMmTIgyFTtxCZXkiSEIqSN0SRJA+SFA9CMhTxICFTUQqZJfM8+/6us2u17//cu9c5e917Zf/q073nnH3+a5+z917DPiVZsmSp9jRFvb///htphRnYjYt4i9+Ob7iNg1iK3qgxqYUxOIofcHc8iRtYgoaotgzCJVg76OsFFqEuqiwNsAO/YO1UMS6jG4KnPa7D2om0vMcEBEt3PILVeNp0vc1F6mmHh7AaDUWnbilSi66J0KdTPl/RD6lkO6xGZCaGYBUe557zpSO9EuoF5+Sec91DYxSVwcjXO6nLdKPRex1+ItrmEx7gau7vZ0SvaTtt7476GpfeINomsgkFR0UrGiduwcpUzEanskfl0wW6kKeUPSqfO4i39R1dUVDGIl7QdRchkq9T0dSnoGjaYRWMaO6U9kis08w9NV1f0AxeaQ0dTqugK7UeJZeBsNqJzINXNIu1Crmeog3SjMYrdSJWe3IYXtH5aBVyjUOIqBOw2pPXqI3E0XrCKhS5gFBRb3kNVrui+V7ixBdFcYsRMsthtSsjkSj6RqwCLo3CITMCVrsyHYnSBFYBV0+ETF9Y7UriWbEupsqWrUMRMqNgtSuTkTjPYRWJ6OZByKyG1a4MQ+LopoBVJBK616po2dALibMfVhHXJITILFjtyUd43SObD6uQS9Ntr28nQfpDO2u1J6fhlc6wCsW9xHikkWmobPxaA+/chFXMchLDUQc+0fajcQZWXZdmxVrLeEfL2HgxdctaR8efj2jCtxfLMABWNJhq5N4HHVGrjuU4Coouqidwi51Ac+x0nrNcQUtY6Qifox3RkSs4CxAvuAXKZsRfk1doi4qiU0Q34qz3W7TIKyrq00/BLaqbEX2g16wjswJJshbx91p0wyLf+t8rOhXi394uRNHPCT2gRZHugSWNjlq+Za1LZ0Vq0WzUvcj1wRqh2NyHu9Nx25B6dGPZnUwegs8RsHIe7o67DsC3O08cTUvcQesZ9mBjju9pcA7uzkfUkQT7EFH0+0W+SaV2zCfxD/IBC1Fl0U9l6xHvBIr5IMfQAdUS3Q7ainco5IOcxRGoM6kRqY+J2FD2KHla5P5myZIly3+VkpI/CXqqzeTbW68AAAAASUVORK5CYII="></span>
+                        <span class="contact-list__icon"><img
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPYSURBVGhD7ZnLi09hGMcHjQxKCiMlzRC5DxZsZGFjbWExhSK5l2LhusJQ7vkDiCyMLExGhJSmYUOSaxOSS24LK0RmfJ73fPEb7zkz55x5f0M5n/p23vM+3+f7nF+/65ypKCgoKPh/6ejo6Nve3j4DrUZHOG/keNmk9WG0Ck03r9r+HezC0FH0ngtMBd636pmmmL8HFzEVNaN2XV9mrBfOo8mK7T2YX4n2Mvybu5oAWBbaxbJSY8oLg0Yy8IabXgbIbkXVGlcemFPLkCfRyPLBjDZUo7FhId+eibZoVPnRgxmu8WEgtz+hZXs5JcHMFg7h3jMENkTRv2HvCxqExqJN6LlKqbEetJFlLRrM+qsrlMDebl1GzyDIPmK9Tyf2rsni4LwKbUNPkX2c7kRrUb1ka9uzj2vzmLdK7Q7Oryv+F+x9RZNkyQ8hzcrsBPsnZQkGmacU3wn2m2TJBwH2jR37Zcf2CdmCQeZJxXfCrgGmypYdmo8qy4PaHdmCQeZdxXtQOyJbNui1H4Dvohif3MFdYJmK96D2hkMfWdNDU51LiIHQFxwGyBoMyyT7pRsSA7XsPzBpWqN+D2pbZAsO2Vs1xoPaStnSQ1Pi0wyzZAsOc2drhge1Q7Klh6az6vegNkK24JBdrTEe1M7Ilh6aLqk/jmGyBYe5wzXDg9pF2dJD0wX1e1CbIFtwyJ6oMR7UmmVLD33Ho3YfAufLFhyyF2iMB7VjsqWHpgPq96DWIFtwyN6jMR7U9suWHppWqN+D2n0Owe+CkNmP7MduSAzUlsuaHprGqz8W6ktlDQaZyxQfC/VxsmaDxtfKiOMj9fw/5P6APPsl8dElx8CsV7Jmh+bE94lB/T1aKHtuyFiEPig2Fur7ZM8OzePQd2VZ2EG0Ht3SloPzFrQEpb77gXcUWoZuKiYRPHYNtWrNByFNUZwLtL/sJrG0+1qNbrMEasYzNE/tHtTmosQfhnHgP6v2/BBiz8pnZVqovZxqWA7k+CDa/Q17N9WaCJ5W2bsFr83u2bPxE8J2RLERnJ/Wfg369TJj/R2tc01dgHVz1NE95G1TW88hz24HXY2iXbgxRbU+qI7zOSjVfSh8i11QN+Czmf3VFgYChxD8yE0A1rc5DFU5E/TWRynJ4LE/e4eoJSyE20vpYTTKDXuJNrC0Z2Q0msl6pOyJ4OvygVC/h8bIXh6YM5QhV6KRPnaRsibS1QNRdq5nOjMMqmTgdvTJTS8h7wOxLMtk2Tv/ViiFwXa79Bwq/dLM9ECsVxljVf572EWg/ci+4bu9IK7f/j1h3gNp/AUFBQUF/ygVFT8AY+bgUQPzIZ4AAAAASUVORK5CYII="></span>
                         <a href="https://github.com/Nataly2315">https://github.com/Nataly2315</a>
                     </li>
                 </ul>
@@ -309,7 +440,8 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
-<script src="js/jquery-3.3.1.min.js"></script>
-<script src="js/custom.js"></script>
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/slick.min.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
 </body>
 </html>
